@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100,300,400,600,700&display=swap");
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #353535;
+  color: #9e9e9e;
+  z-index: 10;
+}
+
+nav .navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar .brand-logo {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav .navbar ul {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+
+nav .navbar ul li {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav .navbar ul li:hover {
+  background-color: #5e5e5e;
+  color: white;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  margin: 0;
+}
+
+.page-header .actions {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-header h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.page-header .actions .search {
+  position: relative;
+}
+
+.search-input,
+.filter-select select {
+  display: block;
+  height: calc(1.5em + 0.75rem + 2px);
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.filter-select select {
+  margin-left: 15px;
+}
+
+.page-content {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  display: flex;
+  width: 100%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .card-image {
+  position: relative;
+}
+.card .card-image::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc((16 / 11.25) * 100%);
+}
+
+@media screen and (max-width: 420px) {
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card .card-image::before {
+    padding-top: calc((3 / 4) * 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .card .card-image::before {
+    padding-top: calc((16 / 9) * 100%);
+  }
+}
+
+.card .card-image:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 1;
+}
+
+.card .card-image .poster-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card .card-image .poster-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.card .card-detail {
+  position: relative;
+  padding: 10px;
+}
+
+.card .card-detail .card-actions {
+  position: relative;
+}
+
+.chip {
+  display: inline-block;
+  position: relative;
+  padding: 3px 10px;
+  border-radius: 30px;
+  background: orange;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.chip span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.chip svg {
+  color: #000000;
+}

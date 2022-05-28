@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Watch high quality marvel movies on Movie Flix.">
+    <meta name="keywords" content="Movie, Flix, Spiderman, Thor, Avengers">
+    <meta name="author" content="Amit Gurbani">
+    <title>Marvel Movie Flix</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <h4 class="brand-logo">Marvel Movie Flix</h4>
+          <ul>
+            <li>Login</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="page-header container">
+        <h2 id="list-title">Movie List</h2>
+        <div class="actions">
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="search-input"
+              oninput="filterChanged()"
+            />
+          </div>
+          <div class="filter-select">
+            <select name="filter" id="filter" onchange="filterChanged()">
+              <option value="">Select Rating</option>
+              <option value="morethan9">More than 9</option>
+              <option value="between7and9">Between 7 and 9</option>
+              <option value="between5and7">Between 5 and 7</option>
+              <option value="lessthan5">Less than 5</option>
+            </select>
+          </div>
+          <div class="filter-select">
+            <select name="sort" id="sort" onchange="filterChanged()">
+              <option value="">Sort By</option>
+              <option value="releaseasc">Release Date: Older</option>
+              <option value="releasedesc">Release Date: Latest</option>
+              <option value="namaeasc">Name: A to Z</option>
+              <option value="namedesc">Name: Z to A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="page-content container">
+        <div class="row" id="movies">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="container">© Marvel Movie Flix 2022</div>
+    </footer>
+
+    <script type="module">
+      import { init, filterChanged } from "./modules/index.js";
+
+      (async function () {
+        init();
+      })();
+      window.filterChanged = filterChanged;
+    </script>
+  </body>
+</html>
