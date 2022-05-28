@@ -194,6 +194,7 @@ main {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .card .card-image::before {
     padding-top: calc((16 / 9) * 100%);
   }
