@@ -151,7 +151,7 @@ function filterMoviesByRating(movies) {
  */
 function searchMovies(movies) {
   const searchText = document.getElementById("search").value;
-  if (searchText.length == 0) {
+  if (searchText.length === 0) {
     return movies;
   } else {
     let filteredMovies = movies.filter(({ title }) =>
