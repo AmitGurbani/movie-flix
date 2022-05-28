@@ -12,10 +12,10 @@ Developing web apps with front end frameworks and css libraries is cool, but the
 
 ## Features
 
-- List movies
-- Search movie
-- Filter movies based on rating
-- Sort movies by name and release date
+  - List movies
+  - Search movie
+  - Filter movies based on rating
+  - Sort movies by name and release date
 
 ## Tech Stack
 
@@ -27,9 +27,9 @@ JavaScript, HTML, CSS
 
 ## Lessons Learned
 
-- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) manipulation with JavaScript.
-- [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Module)
-- [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+  - [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) manipulation with JavaScript.
+  - [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Module)
+  - [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 ## Feedback
 
@@ -37,7 +37,7 @@ If you have any feedback, please reach out to me at amit1994.gurbani@gmail.com
 
 ## Author
 
-- [@AmitGurbani](https://www.github.com/AmitGurbani)
+[@AmitGurbani](https://www.github.com/AmitGurbani)
 
 ## 🔗 Links
 
