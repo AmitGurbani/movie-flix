@@ -28,7 +28,7 @@ JavaScript, HTML, CSS
 ## Lessons Learned
 
 1.  [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) manipulation with JavaScript.
-2.  [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Module)
+2.  [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 3.  [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 ## Feedback
